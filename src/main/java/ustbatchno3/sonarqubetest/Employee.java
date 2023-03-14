@@ -16,6 +16,10 @@ public class Employee {
 		empdetails e7 = new empdetails("aysha",24,13,32000);
 		
 		List<empdetails> lst = Arrays.asList(e1,e2,e3,e4,e5,e6,e7);
+		
+		System.out.println("Before incrementing : \n");
+		lst.forEach(t->System.out.println("Name : " + t.getEmpname() + "\tAge : " + t.getAge() + "\tSalary : " + t.getSalary()));
+		
 		List<empdetails> lss = lst.stream()
 				.peek(k->{
 					if((k.getYears()>=1)&&(k.getYears()<=3))
@@ -28,7 +32,8 @@ public class Employee {
 						k.setSalary(k.getSalary()+(0.12)*k.getSalary());}
 				      ).toList();
 				
-		lss.forEach(t->System.out.println(t));
+		System.out.println("\nAfter incrementing : \n");
+		lss.forEach(t->System.out.println("Name : " + t.getEmpname() + "\tAge : " + t.getAge() + "\tSalary : " + t.getSalary()));
 	}
 
 }
