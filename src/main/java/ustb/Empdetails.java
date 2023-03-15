@@ -1,10 +1,11 @@
-package ustbatchno3.sonarqubetest;
+package ustb;
 
-public class empdetails {
+public class Empdetails {
 	private String empname;
-	private int age,years;
+	private int age;
+	private int years;
 	private double salary;
-	public empdetails(String empname, int age, int years, double salary) {
+	public Empdetails(String empname, int age, int years, double salary) {
 		super();
 		this.empname = empname;
 		this.age = age;

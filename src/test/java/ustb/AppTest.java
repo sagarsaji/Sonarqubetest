@@ -1,9 +1,8 @@
-package ustbatchno3.sonarqubetest;
+package ustb;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-
 /**
  * Unit test for simple App.
  */
@@ -19,7 +18,6 @@ public class AppTest
     {
         super( testName );
     }
-
     /**
      * @return the suite of tests being tested
      */
@@ -27,7 +25,6 @@ public class AppTest
     {
         return new TestSuite( AppTest.class );
     }
-
     /**
      * Rigourous Test :-)
      */
